@@ -1,7 +1,8 @@
 package gojieba
 
 /*
-#cgo CXXFLAGS: -I./deps -DLOGGING_LEVEL=LL_WARNING -O3 -Wall
+
+#cgo CXXFLAGS: -I./deps -DLOGGING_LEVEL=LL_WARNING -O3 -w
 #include <stdlib.h>
 #include "jieba.h"
 */
@@ -147,3 +148,4 @@ func cwordweights(x *C.struct_CWordWeight) []WordWeight {
 	}
 	return s
 }
+//#cgo CXXFLAGS: -I./deps -DLOGGING_LEVEL=LL_WARNING -O3 -Wall
